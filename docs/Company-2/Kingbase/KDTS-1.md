@@ -49,7 +49,7 @@ V8:用户：kingbase,密码：kingbase
 
  initdb --enable-ci --dbmode=mysql 
 
-![](https://cdn.nlark.com/yuque/0/2025/png/57984917/1762502802124-560ad82c-b423-476d-abb2-4ad5a64877f6.png)
+![](images/初始化数据库.png)
 
 #### （1）初始化数据库命令：
 ```plain
