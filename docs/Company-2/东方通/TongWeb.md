@@ -4,10 +4,10 @@
 跟apache很像
 在/software/TongWeb/tonghttpserver/THS/bin/https.conf文件
 
-#HTTPS port:
-Listen 8099
+    #HTTPS port:
+    Listen 8099
 
-<VirtualHost *:8099>
+    <VirtualHost *:8099>
     ServerAdmin webmaster@dummy-host.example.com
     DocumentRoot "/software/TongWeb/tonghttpserver/THS/htdocs/workflow-front"
     ServerName localhost:8099
@@ -32,12 +32,12 @@ Listen 8099
     ProxyTimeout  50m
     ProxyPass /  !
 
-</VirtualHost>
+    </VirtualHost>
 
 
-LogLevel warn
+    LogLevel warn
 
-<IfModule log_config_module>
+    <IfModule log_config_module>
     LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
     LogFormat "%h %l %u %t \"%r\" %>s %b" common
 
@@ -46,7 +46,7 @@ LogLevel warn
     </IfModule>
 
     CustomLog "| /software/TongWeb/tonghttpserver/THS/bin/rotatelogs /software/TongWeb/tonghttpserver/THS/logs/access_log_%Y%m%d 86400 480" combined
-</IfModule>
+    </IfModule>
 
 
 
