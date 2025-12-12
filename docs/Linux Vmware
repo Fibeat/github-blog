@@ -17,3 +17,22 @@
 3.运维产品-CMDB
 
 
+
+
+
+
+
+##Linux下Docker使用VPN代理上网
+1.查看当前docker是否使用了代理：docker info
+
+2.VPN代理的使用方法：
+    1.查询vpn端口号，在windows的vpn连接属性里面查看
+    2.在/etc/profile中添加如下代码：
+    export http_proxy=http://用户名:密码@vpn服务器ip:端口号
+    export https_proxy=http://用户名:密码@vpn服务器ip:端口号
+    eg:
+    export HTTP Proxy: http://192.168.100.102:7890/
+    export HTTPS Proxy: http://192.168.100.102:7890/
+    3.查看方法：docker info
+    4.取消代理方法：在/etc/profile中删除上述添加的代码，然后source /etc/profile
+    5.vpn(clash)要开启局域网访问

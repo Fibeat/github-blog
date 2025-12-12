@@ -193,17 +193,61 @@
 #     print(c)
 # fib(2000)
     
-def ask_ok(prompt, retries=3, reminder='please try again!'):
-    """询问用户确认的函数"""
-    while True:
-        replay = input(prompt)
-        if replay in ('y', 'ye', 'yes'):
-            return True
-        if replay in ('n', 'no', 'nop', 'nope'):
-            return False
-        retries = retries -1
-        if retries < 0:
-            raise ValueError('you out')
-        print(reminder)
+# def ask_ok(prompt, retries=3, reminder='please try again!'):
+#     """询问用户确认的函数"""
+#     while True:
+#         replay = input(prompt)
+#         if replay in ('y', 'ye', 'yes'):
+#             return True
+#         if replay in ('n', 'no', 'nop', 'nope'):
+#             return False
+#         retries = retries -1
+#         if retries < 0:
+#             # raise ValueError('invalid user response')
+#             return False
+#         print(reminder)
 # ask_ok('Do you really want to quit?')
-ask_ok('OK to overwrite the file?', 2)
+# ask_ok('OK to overwrite the file?', 2)
+# ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')
+
+# def f(a, L=[]):
+#     L.append(a)
+#     return L
+# print(f(1))
+# # print(f(2)) 
+# print(f(3))
+
+# def standard_arg(arg):
+#     print(arg)
+
+# 列表的用法
+# fruits = ['orange', 'apple', 'pear','banana', 'kiwi', 'apple', 'banana']
+# print(fruits.count('apple'))
+# print(fruits.count('tangerine'))
+# print(fruits.index('banana', 4))
+# print(fruits.pop())
+# print(fruits)
+
+# 用列表实现栈
+# stack = [3, 4, 5]
+# stack.append(6)
+# stack.append(7)
+# print(stack)
+# print(stack.pop())
+# print(stack)
+
+# 用列表实现队列
+# from collections import deque
+# queue = deque(["Eric", "John", "Michael"])
+# queue.append("first")
+# queue.append("second")
+# print(queue)
+# print(queue.popleft())
+# print(queue.popleft())
+# print(queue)
+
+squares = []
+for i in range(10):
+    squares.append(i**2)
+print(squares)
+
