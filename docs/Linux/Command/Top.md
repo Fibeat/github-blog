@@ -73,3 +73,9 @@
     q或者Ctrl+C 退出top
 
 
+对于linux内部进程运行过高的一些方法：
+1.停止不必要的一些命令：
+systemctl list-units --type=service --state=running
+查看那些systmctl 不是必要
+
+
