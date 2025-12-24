@@ -18,7 +18,11 @@ nav:
         - Company-2/东方通/TongWeb.md
     - Linux:
       - Command:
-        - Linux/Command/Top.md
+        - Linux/Command/top.md
+        - Linux/Command/iostat.md
+    - Mysql:
+      - Password:
+        - Mysql/Password.md
   - About: about.md
 
 # [UI]
