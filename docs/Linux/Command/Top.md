@@ -73,14 +73,14 @@
     q或者Ctrl+C 退出top
 
 
-对于linux内部进程运行过高的一些方法：
-1.停止不必要的一些命令：
-systemctl list-units --type=service --state=running
-查看那些systmctl 不是必要
-2.限制cpu的使用率
-cpulimit -p 2654 -l 50 -b
--p 进程号
--l cpu使用率
--b 后台运行
-3.有时候cpu运行太高，可能是进程占用，或者暂时杀死试试
+# 对于linux内部进程运行过高的一些方法：
+    1.停止不必要的一些命令：
+    systemctl list-units --type=service --state=running
+    查看那些systmctl 不是必要
+    2.限制cpu的使用率
+    cpulimit -p 2654 -l 50 -b
+    -p 进程号
+    -l cpu使用率
+    -b 后台运行
+    3.有时候cpu运行太高，可能是进程占用，或者暂时杀死试试
 
