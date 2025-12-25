@@ -16,3 +16,7 @@ Mysql/
 # git commit -m "恢复被忽略的文件"
 # git push origin main
 ##test-1/
+
+
+#忽略文件---基于国产化的运管相关中间件的部署.md
+/docs/Company-2/基于国产化的运管相关中间件的部署.md
