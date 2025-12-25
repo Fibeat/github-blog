@@ -1,5 +1,18 @@
 
+#使用方法：
+# 忽略目录
 Mysql/
+# 忽略目录下面的文件
+# test-1/111.txt
 
-#
+
+#注意首先要删除原有的文件，因为是由.gitignore控制的，已经被git跟踪的文件不会因为添加到.gitignore而被忽略
+# git rm -r --cached test-1/
+# git commit -m "删除被忽略的文件"
+# git push origin main
+
+#如何恢复被忽略的文件
+# git add test-1/
+# git commit -m "恢复被忽略的文件"
+# git push origin main
 ##test-1/
