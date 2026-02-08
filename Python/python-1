@@ -1,0 +1,253 @@
+
+#数字       
+# a = (50 - 5*6) / 5
+# print(a)
+
+# b = 17 / 3
+# print(b)
+
+# weight = 10
+# height=5*9
+# plus=weight*height
+# print(plus)
+
+# the_world_is_flat = False
+# if the_world_is_flat:
+#     print("Be careful not to fall off!")
+# else:
+#     print("It's not flat!")
+
+# tax = 12.5 / 100
+# price = 100.50
+# print(price * tax)
+# _ = price * tax
+# print(print + _)
+# round(_, 2)
+# print(_)
+# print(r'c:\some\name')  # 使用r''，可以让反斜杠不发生转义
+# print('c:\some\name')
+# print(3*'un' + 'ium')  # 字符串的重复和连接
+# print('Py' 'thon')  # 字符串的连接
+# print('Py' + 'thon')  # 字符串的连接
+# print('Hello, world!'[0])  # 字符串的索引
+# print('Hello, world!'[-1])  # 字符串的索引
+# print('Hello, world!'[0:5])  # 字符串的切片
+
+# print('Hello, world!'[3:8])  # 字符串的切片
+# word = 'password'
+# print(word[6])  # 字符串的切片
+
+# squares = [1, 4, 9, 16, 25]
+# print(squares[::-1])  # 列表的切片
+# print(squares[2])  # 列表的切片
+# print(squares + [36, 49, 64, 81, 100])  # 列表的连接
+
+# cubes = [1, 8, 27, 65, 125]  # 注意65不是立方数
+# cubes[3] = 64  # 修正错误的立方数
+# print(cubes)
+# cubes.append(216)  # 在列表末尾添加新的立方数
+# cubes.append(7**3)
+# print(cubes)
+
+# rgb = ["red", "green", "blue"]
+# print(rgb.index("green"))  # 列表的方法
+# rgba = rgb
+# rgba.append("alpha")
+# print(rgba)
+# print(rgb)
+
+# letters = ['a', 'b', 'c', 'd', 'e','f']
+# print(letters[2:5])
+# letters[2:5] = ['C', 'D', 'E']
+# print(letters)
+# letters[2:5] = []
+# print(letters)
+# print(len(letters))
+
+# a = ['a', 'b', 'c', 'd']
+# n = [1, 2, 3, 4]
+# x = [a, n]
+# print(x)
+# print(x[0])
+# print(x[0][1])
+
+# a, b= 0, 1
+# print(b)
+# l = 2*2
+# while a < 100:
+#     print(a, end=', ')
+#     a, b = b, a+b1
+
+
+# print(letters)
+
+# x = int(input("pleade input an integer: "))
+# # letters[:] = []
+# if x < 0:
+#     x = 0
+#     print('Negatived changed to zero')
+# elif x==0:
+#     print('Zero')
+# elif x==1:
+#     print('Single')
+# else:
+    # print('More')
+
+
+# words = ['cat', 'windows', 'dog']
+# for w in words:
+#     print(w, len(w))
+
+# 对于for循环，与c语言不同，for...in循环会遍历一个序列（可以是列表，字符串，甚至是文件,
+# 不可以是一个数字，因为数字不是一个序列，但是可以使用range()函数生成一个数字序列
+# 
+
+# list(range(5))
+# print(list(range(5)))
+# print(list(range(3, 6)))
+# print(list(range(3, 20, 3)))
+# print(list(range(0, -10, -2)))
+# a = ['Marry', 'had', 'a', 'little', 'lamb']
+# print(len(a))
+# for i in range(len(a)):
+#      print(i, a[i])
+
+# continue 和 break 语句
+# 理解 continue 和 break 语句里面迭代的作用，迭代就是开始下一轮的循环
+# continue 语句告诉Python跳过当前循环块中的剩余语句，然后继续进行下一轮循环。
+# break 语句则会终止整个循环，不再执行任何后续的迭代。
+# 示例代码如下：
+# for num in range(2, 10):
+#     if num % 3 == 0:
+#         print("Found an even number", num)
+#         # continue
+#         # break
+#     print("Found a number", num)
+
+# for num in range(2, 10):
+#     for i in range(2, num):
+#         if num % 2 == 0:
+#             print(f"this is my world -- {num}")
+#             break
+#     # print(f"breaking num is {num}")
+
+
+
+# def http_error(status):
+#     match status:
+#         case 400:
+#             return "Bad request"
+#         case 404:
+#             return "Not found"
+#         case 418:
+#             return "I'm a teapot"
+#         case _:
+#             return "Something is bad!!"
+
+# print(http_error(400))
+# print(http_error(404))
+# point = (0, 5)
+# match point:
+#     case (0, 0):
+#         print("Origin")
+#     case (0, y):
+#         print(f"Y={y}")
+#     case (x, 0):
+#         print(f"X={x}")
+#     case (x, y):
+#         print(f"X={x}, Y={y}")
+#     case _:
+#         raise ValueError("Not a point")
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#     # def __str__(self):
+#     #     return f"Point(self.x={self.x}, self.y={self.y})"
+                    
+# point = Point(1, 1)
+# print(point)
+
+# def where_is(point):
+#     match point:
+#         case Point(x=0, y=0):
+#             print("Origin")
+#         case Point(x=0, y=y):
+#             print(f"Y={y}")
+#         case Point(x=x, y=0):
+#             print(f"X={x}")
+#         case Point(x=x, y=y):
+#             print(f"X={x}, Y={y}")
+
+# where_is(point)
+# print("where_is(Point(0, 5))")
+
+# def fib(n):
+#     """返回 fib(n)斐波切列"""
+#     a, b = 0, 1
+#     while a < n: # 当a小于n时循环
+#         print(a, end=', ')# 打印a的值，并在后面加上逗号和空格
+#         a, b, c=b, a+b, 2# 同时赋值，b的值赋给a，a+b的值赋给b
+#     print()
+#     print(c)
+# fib(2000)
+    
+# def ask_ok(prompt, retries=3, reminder='please try again!'):
+#     """询问用户确认的函数"""
+#     while True:
+#         replay = input(prompt)
+#         if replay in ('y', 'ye', 'yes'):
+#             return True
+#         if replay in ('n', 'no', 'nop', 'nope'):
+#             return False
+#         retries = retries -1
+#         if retries < 0:
+#             # raise ValueError('invalid user response')
+#             return False
+#         print(reminder)
+# ask_ok('Do you really want to quit?')
+# ask_ok('OK to overwrite the file?', 2)
+# ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')
+
+# def f(a, L=[]):
+#     L.append(a)
+#     return L
+# print(f(1))
+# # print(f(2)) 
+# print(f(3))
+
+# def standard_arg(arg):
+#     print(arg)
+
+# 列表的用法
+# fruits = ['orange', 'apple', 'pear','banana', 'kiwi', 'apple', 'banana']
+# print(fruits.count('apple'))
+# print(fruits.count('tangerine'))
+# print(fruits.index('banana', 4))
+# print(fruits.pop())
+# print(fruits)
+
+# 用列表实现栈
+# stack = [3, 4, 5]
+# stack.append(6)
+# stack.append(7)
+# print(stack)
+# print(stack.pop())
+# print(stack)
+
+# 用列表实现队列
+# from collections import deque
+# queue = deque(["Eric", "John", "Michael"])
+# queue.append("first")
+# queue.append("second")
+# print(queue)
+# print(queue.popleft())
+# print(queue.popleft())
+# print(queue)
+
+squares = []
+for i in range(10):
+    squares.append(i**2)
+print(squares)
+
